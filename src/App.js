@@ -19,30 +19,20 @@ export default function App() {
   function wordCount(words){
    const wordsArr = text.trim().split(' ')
    const filtered = wordsArr.filter(word => word !== "")
+   console.log(filtered.length);
    return filtered.length
-  }
-//   useEffect(() => {
-//     if(timer >0){
-      
-//       setTimeout(() => {
-  
-//         setTimer(prevtime=> prevtime -1)
-//       }, 1000)
-//     }
-// }, [timer])
-  
 
+   
+  }
+  
 useEffect(()=>{
-  if(timer > 0){
-
-    setTimeout(()=>{
-      setTimer(prevState => prevState -1)
-    }, 1000)
-  }
+  setTimeout(()=>{
+    setTimer(prevState => prevState-1)
+  }, 1000)
 },[timer])
   return (
     <div className="App">
-          <h1>WordCunt</h1>
+          <h1>WordCount</h1>
            <textarea onChange={handleChange} value={text}/>
     
           <h4>Time remaining:{timer}</h4>
