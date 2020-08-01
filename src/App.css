@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 *{
   box-sizing: border-box;
 }
 
 body{
+  
   margin: 0;
+  font-family: 'Press Start 2P', cursive;
 }
 
 
@@ -17,7 +21,7 @@ body{
 button {
   font-family: 'Press Start 2P', cursive;
   display: block;
-  margin: 0 auto;
+  margin: 1em auto;
   border: none;
   background: #a80020;
   background: #00b800;
@@ -26,7 +30,7 @@ button {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: bold;
   text-align:center;
 }
